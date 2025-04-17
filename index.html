@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/headphones.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PodPal - Your AI Podcast Recommendation Assistant. Discover personalized podcast recommendations based on your interests and preferences." />
+    <title>PodPal - AI Podcast Recommendations</title>
+    <script async src="https://cse.google.com/cse.js?cx=e3c8b57751bc74d7b"></script>
+    <style>
+      /* Google CSE Custom Styling */
+      .gsc-control-cse {
+        padding: 0 !important;
+        border: none !important;
+        background: transparent !important;
+        font-family: system-ui, -apple-system, sans-serif !important;
+      }
+      
+      /* Hide the default Google search box when we're using our own */
+      .gsc-search-box {
+        display: none !important;
+      }
+      
+      /* Style the search results container */
+      .gsc-results-wrapper-overlay, .gsc-results-wrapper-visible {
+        border: none !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+        border-radius: 8px !important;
+      }
+      
+      /* Style the individual search results */
+      .gsc-result {
+        padding: 1.5rem !important;
+        border-bottom: 1px solid #e5e7eb !important;
+        transition: background-color 0.2s ease !important;
+      }
+      
+      .gsc-result:hover {
+        background-color: #f5f3ff !important; /* Light indigo/purple background on hover */
+      }
+      
+      /* Style the titles in the search results */
+      .gs-title {
+        font-size: 1.25rem !important;
+        color: #4f46e5 !important; /* Indigo color */
+        text-decoration: none !important;
+        font-weight: 600 !important;
+      }
+      
+      .gs-title:hover {
+        text-decoration: underline !important;
+      }
+      
+      /* Style the result snippets */
+      .gs-snippet {
+        color: #4b5563 !important;
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+      }
+      
+      /* Hide the URL at the top */
+      .gsc-url-top {
+        display: none !important;
+      }
+      
+      /* Style the URL at the bottom */
+      .gs-visibleUrl {
+        color: #6366f1 !important; /* Indigo URL */
+        font-size: 0.8rem !important;
+      }
+      
+      /* Style the pagination */
+      .gsc-cursor-box {
+        margin-top: 1.5rem !important;
+        text-align: center !important;
+      }
+      
+      .gsc-cursor-page {
+        color: #4f46e5 !important;
+        background-color: white !important;
+        border: 1px solid #e0e7ff !important;
+        border-radius: 4px !important;
+        padding: 0.25rem 0.5rem !important;
+        margin: 0 0.25rem !important;
+        transition: all 0.2s ease !important;
+        font-weight: 500 !important;
+      }
+      
+      .gsc-cursor-page:hover {
+        background-color: #f5f3ff !important;
+        border-color: #6366f1 !important;
+      }
+      
+      .gsc-cursor-current-page {
+        background-color: #6366f1 !important;
+        color: white !important;
+        border-color: #6366f1 !important;
+      }
+      
+      /* Style the thumbnail images */
+      .gs-image-box {
+        padding-right: 1rem !important;
+      }
+      
+      .gs-image {
+        border-radius: 8px !important;
+        border: 1px solid #e0e7ff !important;
+      }
+      
+      /* Add a "podcast" badge-like element */
+      .gs-title::after {
+        content: "Podcast";
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 0.7rem;
+        padding: 0.1rem 0.4rem;
+        border-radius: 9999px;
+        background-color: #e0e7ff;
+        color: #4f46e5;
+        vertical-align: middle;
+        font-weight: 500;
+      }
+      
+      /* Style "no results" messaging */
+      .gs-no-results-result {
+        background-color: #f5f3ff !important;
+        border: 1px solid #e0e7ff !important;
+        border-radius: 8px !important;
+        padding: 1.5rem !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
